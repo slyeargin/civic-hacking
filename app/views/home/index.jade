@@ -1,0 +1,74 @@
+doctype html
+html
+head
+meta(charset='utf-8')
+meta(name='viewport' content='width=device-width, initial-scale=1')
+title= title
+link(href='/css/normalize.min.css', rel='stylesheet')
+link(href='/css/buttons.min.css', rel='stylesheet')
+link(href='/css/jquery-ui-1.10.4.min.js')
+link(rel='stylesheet', type='text/css', href='css/default.css')
+link(rel='stylesheet', type='text/css', href='css/component.css')
+link(rel='stylesheet' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+link(rel='stylesheet' href='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css')
+link(rel='stylesheet' href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css')
+link(href='/less/app.css', rel='stylesheet')
+body.cbp-spmenu-push
+nav.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-left#cbp-spmenu-s1
+h3 Menu
+span.glyphicon.glyphicon-arrow-left
+label Activity Type:
+select.form-control(name='activities')
+option(value='parks', selected='selected') Parks
+option(value='restaurants') Food
+option(value='beer') Beer
+option(value='bus-stops') Bus Stops
+option(value='art') Art
+option(value='wifi') Public Wifi
+option(value='historical-sites') Historical Sites
+label Distance:
+select.form-control(name='radius')
+option(value='.5', selected='selected') 1/2 mile
+option(value='1') 1 mile
+option(value='2') 2 miles
+option(value='5') 5 miles
+option(value='10') 10 miles
+label Travel Mode:
+select.form-control#mode
+option(value='DRIVING', selected='selected') Drive
+option(value='BICYCLING') Bicycle
+option(value='TRANSIT') Buses
+option(value='WALKING') Walk
+button.fancy.btn-1.btn-1d#submit Find Activities
+button.fancy.btn-1.btn-1d#clear-tmp-markers Clear Map
+button.fancy.btn-1.btn-1d#trip Plan It!
+.contain
+#directions
+.contain
+#info
+.pagecontain
+.container
+header.page-header
+img.img-responsive.logoshadow#logo(src='/img/itnerary.svg')
+span.glyphicon.glyphicon-align-justify.hide
+section
+button.fancy.btn-1.btn-1d#geolocate Find Me!
+
+#waypoints
+#info
+#map
+
+script(src='/js/vendor/jquery-2.1.1.min.js')
+script(src='/js/vendor/jquery-ui-1.10.4.min.js')
+script(src='/js/vendor/jquery.ui.touch-punch.min.js')
+script(src='/js/vendor/lodash-2.4.1.min.js')
+script(src='/js/vendor/moment-2.6.0.min.js')
+script(src='/js/vendor/modernizr.custom.js')
+script(src='/js/vendor/classie.js')
+script(src='/js/vendor/buttons.min.js')
+script(src='/js/vendor/traceur.js')
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD4sNttD_i7PtUfNbANpfyCNt2FRMWzkHY&sensor=true&libraries=weather')
+script(src='/js/es6/compiled/main.js')
+script(src='/js/es6/compiled/maps.js')
+
+  
